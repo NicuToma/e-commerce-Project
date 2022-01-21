@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  /* background-color: #1f1f1f; */
+}
+
+.container {
+}
+/* navbar style */
+.nav_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: #121311;
+  color: #cdcdcd;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+}
+
+.logo img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.menu,
+.cart,
+.admin {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+}
+
+body > div > div > div.menu > div.admin > a,
+body > div > div > div.menu > div.cart > a {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+
+body > div > div > div.menu > div.admin > a:hover,
+body > div > div > div.menu > div.cart > a:hover {
+  color: dodgerblue;
+}

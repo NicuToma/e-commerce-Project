@@ -1,0 +1,26 @@
+{
+  "name": "bike-mag",
+  "version": "1.0.0",
+  "description": "Bike store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicuToma/e-commerce-Project.git"
+  },
+  "keywords": [
+    "BKM"
+  ],
+  "author": "Toma Nicu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicuToma/e-commerce-Project/issues"
+  },
+  "homepage": "https://github.com/NicuToma/e-commerce-Project#readme",
+  "dependencies": {
+    "@fontsource/roboto": "^4.5.1",
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}
