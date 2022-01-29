@@ -21,6 +21,7 @@
   "homepage": "https://github.com/NicuToma/e-commerce-Project#readme",
   "dependencies": {
     "@fontsource/roboto": "^4.5.1",
-    "@fortawesome/fontawesome-free": "^5.15.4"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3"
   }
 }
