@@ -38,7 +38,7 @@ document
   .addEventListener("click", addToCart);
 async function addToCart(event) {
   const addToCartBtn = event.target;
-  console.log(addToCartBtn);
+
   let productId = addToCartBtn.getAttribute("id");
 
   const productURL = `https://61e06cc763f8fc0017618752.mockapi.io/products/${productId}`;
@@ -53,7 +53,6 @@ async function addToCart(event) {
     cart.push(product);
   }
 
-  console.log(cart);
-
   localStorage.setItem("cart", JSON.stringify(cart));
+  console.log(cart);
 }
