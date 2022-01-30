@@ -34,9 +34,9 @@
   gap: 5px;
 }
 
-#countDown,
-#countUp,
-#deleteItem {
+.countDown,
+.countUp,
+.deleteItem {
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
