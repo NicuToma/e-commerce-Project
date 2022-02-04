@@ -9,9 +9,11 @@ body {
   /* background-color: #1f1f1f; */
 }
 
-.container {
+.containerHome {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 /* navbar style */
 .nav_menu {
@@ -42,6 +44,11 @@ body {
   max-height: 40px;
 }
 
+.logo img:hover {
+  transform: rotateY(360deg);
+  transition-duration: 2s;
+}
+
 .menu,
 .cart,
 .admin {
@@ -58,8 +65,30 @@ body > div > div > div.menu > div.cart > a {
 }
 
 body > div > div > div.menu > div.admin > a:hover,
-body > div > div > div.menu > div.cart > a:hover {
+body > div > div > div.menu > div.cart > a:hover,
+a:hover {
   color: dodgerblue;
+}
+/* filter products */
+
+#drop {
+  margin: 5px;
+  background-color: #666666;
+  height: 40px;
+}
+
+#banner {
+  width: 80%;
+  height: auto;
+}
+
+.filterProducts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
 }
 
 /* cards layout */
@@ -67,52 +96,74 @@ body > div > div > div.menu > div.cart > a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 5px;
-  padding-top: 5px;
+  padding-left: 15px;
+
   justify-content: center;
   column-gap: 10px;
-  row-gap: 5px;
-  background-color: #cdcdcd;
+  row-gap: 20px;
 }
 
 .product-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
+  width: 200px;
+  height: 250px;
+  padding: 5px;
   border: 2px solid lightgrey;
   border-radius: 10px;
   background-color: white;
+  position: relative;
 }
 
-#priceOf {
-  font-weight: bold;
+.product-card:hover {
+  box-shadow: 0px 0px 5px 5px gray;
 }
 
-#priceValue {
+.product-card h5 {
+  margin: 5px;
+}
+
+.price {
+  position: absolute;
+  bottom: 40px;
+}
+
+.priceValue {
   font-size: 0.8em;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .product-card img {
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: auto;
+  position: absolute;
+  bottom: 70px;
 }
 
 .details {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: space-evenly;
+  width: 80%;
+  position: absolute;
+  bottom: 5px;
+  background-color: #cdcdcd;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.details a {
+.product-card a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  position: absolute;
+  bottom: 5px;
   text-decoration: none;
   color: #666666;
 }
 
-.details a:hover {
+.product-card .details:hover {
   color: dodgerblue;
 }

@@ -1,0 +1,402 @@
+[
+ {
+  "name": "CUBE STEREO HYBRID 120 PRO 625 FLASHGREY ORANGE 2022",
+  "price": "3900",
+  "description": "Expand your horizons. Sleek, comfortable and amazingly capable, the new Stereo Hybrid 120 is your weekend ticket to adventure. Built around our acclaimed Stereo 120 suspension design, the seamless addition of fourth generation Bosch power adds more adventure to the mix. Ride the dream. ",
+  "imageURL": "https://cdn.contentspeed.ro/bikexpertb2c.websales.ro/cs-content/cs-photos/products/original/bicicleta-cube-stereo-hybrid-120-pro-625-flashgrey-orange-2022-cadru-17-s-roti-275_109095_1_1636122949.jpg",
+  "specs": "ebike",
+  "id": "1"
+ },
+ {
+  "name": "STEREO HYBRID 160 HPC 625",
+  "price": "5329",
+  "description": "Completely new for 2022, the Stereo Hybrid 160 HPC 750's frame is designed to blend world-class trail-taming abilities with superb handling and more range than ever before. With the high-capacity 750Wh battery and fourth-generation Bosch drive unit housed entirely inside the down tube, it's as powerful as it is good to look at. Hidden by a cover with shock protection, push-button access and a hidden lock, the battery is both secure and easy to access. Integrated cable routing removes cable holes from the head tube area for greater strength and a neater appearance. The trunnion shock mount, oversize linkage bearings, Boost 148 rear end and 1.5in head tube all contribute to accurate tracking, even when it's all coming at you thick and fast. And sorted, race-inspired geometry gives you the advantage you need to show the trail exactly who's boss.",
+  "imageURL": "https://www.cube.eu/typo3temp/_processed_/9/d/csm_537252_porn_ae07cfd4b2.jpg?1637785897",
+  "specs": "ebike",
+  "id": "2"
+ },
+ {
+  "name": "CUBE STEREO HYBRID 160 HPC SL 625 27.5",
+  "price": "4400",
+  "description": "This is the bike that redefines what's possible. Powered by Bosch's fourth-generation drive system and a high-capacity 625Wh battery, the Stereo Hybrid 160 HPC SL's unique combination of gravity prowess and all-round trail ability sets it apart. The new RockShox Zeb fork with 38mm stanchions and 170mm travel, Deluxe Select shock and carefully tuned kinematics serve up lots of trail-taming travel. Sram's Eagle transmission gives you the range you need to take on any climb. And powerful Magura MT Thirty four-piston hydraulic disc brakes - with a remote dropper post - put you in full control. Get your enduro on.",
+  "imageURL": "https://cdn.contentspeed.ro/bikexpertb2c.websales.ro/cs-content/cs-photos/products/original/bicicleta-cube-stereo-hybrid-160-hpc-sl-625-275-pacific-red-2021-16-s_104410_1_1636121888.jpg",
+  "specs": "ebike",
+  "id": "3"
+ },
+ {
+  "name": "TREK POWERFLY FS 4",
+  "price": "4750",
+  "description": "Powerfly FS 4 is a full suspension electric mountain bike built to tackle rugged trail adventures. The plush suspension setup soaks up rough terrain, and the powerful Bosch electric drive system boosts your capacity to crush climbs and mile after mile of singletrack.",
+  "imageURL": "https://trek.scene7.com/is/image/TrekBicycleProducts/PowerflyFS4_21_32759_A_Portrait?$responsive-pjpg$&cache=on,on&wid=1440&hei=1080",
+  "specs": "ebike",
+  "id": "4"
+ },
+ {
+  "name": "TREK E-CALIBER 9.9 XX1 AXS",
+  "price": "13549",
+  "description": "E-Caliber 9.9 XX1 AXS is a light, fun, and fast carbon e-MTB. It’s built to ride like a traditional cross country bike, and it even has the same race-worthy suspension tech as Supercaliber. The sleek and subtle Fazua drive system provides a boost without adding bulk, and you get a spec loaded with high-end parts.",
+  "imageURL": "https://trek.scene7.com/is/image/TrekBicycleProducts/ECal991XXS_22_35773_A_Portrait?$responsive-pjpg$&cache=on,on&wid=1440&hei=1080",
+  "specs": "ebike",
+  "id": "5"
+ },
+ {
+  "name": "TREK SESSION 9 X01",
+  "price": "7030",
+  "description": "Session 9 is a downhill mountain bike with a robust alloy frame and high-pivot suspension design that keeps you nimble, planted, and blazing fast on even the most punishing runs. It’s built with our best DH suspension package, a high-end drivetrain, and powerful Code RSC brakes.",
+  "imageURL": "https://trek.scene7.com/is/image/TrekBicycleProducts/Session9X01_22_34625_A_Portrait?$responsive-pjpg$&cache=on,on&wid=1440&hei=1080",
+  "specs": "mtb",
+  "id": "6"
+ },
+ {
+  "name": "SPECIALIZED STUMPJUMPER ST LTD DOWNIEVILLE - 29",
+  "price": "3999",
+  "description": "The ode from Specialized to one of the greatest places to bike in the world. This limited edition ST model is the perfect choice for long, challenging rides that require a fast, efficient and robust bike. It comes with a lightweight carbon frame, custom suspension, powerful disc brakes and more.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/60/b1/7e/stumpjumper-st-ltd-1-902009.JPG",
+  "specs": "mtb",
+  "id": "7"
+ },
+ {
+  "name": "CANNONDALE TRAIL SE 3 - 29",
+  "price": "1299",
+  "description": "A mountain bike built to raise your game and ignite a passion for the trail.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/3e/4d/7a/trail-se3-impact-orange-918115.jpg",
+  "specs": "mtb",
+  "id": "8"
+ },
+ {
+  "name": "FOX PROFRAME MATTE FULLFACE HELMET",
+  "price": "195",
+  "description": "The Fox Proframe Helmet is the lightest and most breathable full face helmet Fox have ever created. Designed to perform at the highest levels for aggressive all mountain riders and enduro racers.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/1c/f4/d3/fox-proframe-matte-fullface-helmet-black2-857715.jpg",
+  "specs": "helmets",
+  "id": "9"
+ },
+ {
+  "name": "BELL FULL-9 FUSION MIPS HELMET  ",
+  "price": "225",
+  "description": "Developed on Bell's Full-9 platform, the new Full-9 Fusion is the uncompromising full-face helmet for riders who can't be stopped by anything. Premium fiberglass helmet shell, wide field of view, overbrow ventilation, comfortable interior and MIPS technology provide world-class quality. It doesn't matter if you want to set new downhill records or prefer to make big jumps in the bike park. When you go to the top to plunge down from there, that's your helmet.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/4e/e4/f7/300514-04-d-613551.jpg",
+  "specs": "helmets",
+  "id": "10"
+ },
+ {
+  "name": "LEATT BODY TEE 3DF AIRFIT LITE - BLACK",
+  "price": "165",
+  "description": "E tested and certified as impact protection, the 3DF AirFit Lite Body Tee scores a total of 13 points in the Leatt protection system. This short-sleeved body protector is made of 3DF AirFit impact foam which is flexible in its natural state to conform to the body’s shape. This same soft foam instantly hardens upon impact and thereby protects your chest, back and shoulders.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/ea/08/fa/205767-00-d-389309.jpg",
+  "specs": "bodyArmor",
+  "id": "11"
+ },
+ {
+  "name": "FIVE TEN KESTREL PRO BOA MOUNTAINBIKING",
+  "price": "128",
+  "description": "With the Kestrel Pro Boa® shoe you can get everything out of you while biking! Its click system compatible design and the high stiffness of the midsole guarantee you optimal power transmission. The finely adjustable Boa® closure system allows a snug, secure fit, while the wide Stealth® C4 rubber outsole provides optimum grip on any terrain. The quick-drying synthetic upper with breathable Mesh inserts also keeps you comfortable in any weather.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/ea/9d/39/316875-00-d-656917.jpg",
+  "specs": "shoes",
+  "id": "12"
+ },
+ {
+  "name": "POC SPINE VPD 2.0 VEST PROTECTOR VEST",
+  "price": "230",
+  "description": "Full DH protection but barely visible under a T-shirt! The new VPD 2.0 technology allow POC to improve the level of protection, fit and comfort.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/f4/e9/41/54171-00-d-86654.jpg",
+  "specs": "bodyArmor",
+  "id": "13"
+ },
+ {
+  "name": "FOX RACEFRAME IMPACT CE PROTECTOR",
+  "price": "113",
+  "description": "The all new Raceframe Impact guard maintains the slim fit of the Raceframe roost while also offering CE certified chest and back protection.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/f7/12/e6/338922-00-d-716918.jpg",
+  "specs": "bodyArmor",
+  "id": "14"
+ },
+ {
+  "name": "O'NEAL BP PROTECTOR SLEEVE",
+  "price": "144",
+  "description": "Lightweight comfortable protector jacket. /n Bio-foam chest and rib padding /n Neckbrace compatible and easy to fix due to additional loops on front, back and shoulder ",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/41/47/2c/oneal-bp-protector-sleeve-black-1-881056.jpg",
+  "specs": "bodyArmor",
+  "id": "15"
+ },
+ {
+  "name": "NORTHWAVE EXTREME XC GTX MTB WINTER SHOES",
+  "price": "203",
+  "description": "The ultimate shoes for professionals looking for comfortable footwear for optimal winter training. ",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/2e/6a/f5/northwave-extreme-xc-gtx-mtb-winter-shoes-black-10b-869752.jpg",
+  "specs": "shoes",
+  "id": "16"
+ },
+ {
+  "name": "FIVE TEN IMPACT S. HILL MTB SHOES",
+  "price": "100",
+  "description": "Just like their namesake, these men's flat pedal mountain bike shoes are made for speed. The reinforced build offers stiffness and grip for high-speed enduro and downhill riding. A fast-drying build resists moisture to keep your feet dry.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/51/90/a6/five-ten-sam-hill-fu7532-core-black-signal-green-06-874394.jpg",
+  "specs": "shoes",
+  "id": "17"
+ },
+ {
+  "name": "NORTHWAVE ROCKIT ALL TERAIN SHOES ",
+  "price": "108",
+  "description": "The Northwave Rockit All Terain Shoe is a lace-up cycling shoes designed for every situation, whether you are training or heading to work. Valuable not only for riders interested in getting into wild trails but anybody who wants to grow their riding confidence during a two-wheeled gateway or a bike-packing adventure.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/53/0b/3c/northwave-rockit-mtb-shoes-black10--3-1035612.jpg",
+  "specs": "shoes",
+  "id": "18"
+ },
+ {
+  "name": "100% ITRACK GLOVES - BLACK",
+  "price": "21",
+  "description": "The iTrack is one of the most popular gloves by 100%. According to the motto less is more, the iTrack focuses on the essentials: lightweight, breathable top hand material and a thin, single-layer Clarino palm for reliable grip. Due to the slip-on cuff, the glove can be easily put on and off.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/0c/bf/ac/100-prozent-itrack-gloves-black-995374.jpg",
+  "specs": "gloves",
+  "id": "19"
+ },
+ {
+  "name": "BLUEGRASS REACT GLOVE - RED",
+  "price": "32",
+  "description": "he Bluegrass React are among the best when it comes to a solid and durable pair of gloves. Their thin and soft padded palm ensures a comfortable grip feeling on the handlebars even when freeriding on a scree field. On top, you'll find a lightweight and breathable stretch mesh fabric that keeps your hands cool on even the longest rides. The perfect combination.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/10/16/49/bluegrass-3gh008ce00xsrn1-react-gravity-gloves-red-a-1140739.jpg",
+  "specs": "gloves",
+  "id": "20"
+ },
+ {
+  "name": "RACE FACE RUXTON BIKE GLOVES - NAVY",
+  "price": "40",
+  "description": "Push your limits and enjoy extra protection when things go sideways at the park or on the DH course.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/2f/f6/4e/race-face-ruxton-bike-gloves-navy-1-985850.jpg",
+  "specs": "gloves",
+  "id": "21"
+ },
+ {
+  "name": "TROY LEE DESIGNS AIR GLOVE KIDS/YOUTH - FORMULA CAMO NAVY/ORANGE",
+  "price": "26",
+  "description": "roy Lee Designs gloves are all researched, designed and meticulously tested before they make their way on to the hands of great athletes around the world. The Air Glove features a compression-moulded cuff and a single layer palm with laser perforated holes for breathability. Micro-mesh is used all over for added ventilation. Silicon print on finger offers a grippy spot for brake lever grip.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/3d/33/4c/troy-lee-designs-youth-air-gloves-formula-camo-navy-orange-01-1068665.jpg",
+  "specs": "gloves",
+  "id": "22"
+ },
+ {
+  "name": "POC TECTAL RACE SPIN HELMET - 8002 URANIUM BLACK/HYDROGEN WHITE",
+  "price": "172",
+  "description": "he Tectal Race is a well-ventilated helmet that has been specifically developed for aggressive trail riding and enduro racing. It incorporates the aramid bridge system from several of POC’s proven and award-winning helmet range.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/7a/42/52/246221-00-d-480839.jpg",
+  "specs": "helmets",
+  "id": "23"
+ },
+ {
+  "name": "POC TECTAL HELMET - 10505 ACTINIUM PINK MATT",
+  "price": "135",
+  "description": "The well-ventilated POC Tectal Helmet has been specifically developed for aggressive trail riding and enduro racing and incorporates the aramid bridges system from POC’s proven and award-winning Trabec helmet. The reinforced EPS liner provides a high level of protection and the unibody shell construction, introduced in POC’s ground breaking Octal road cycling helmet, further enhances the safety properties and construction integrity of the helmet while maintaining a low weight.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/d8/0d/9a/347485-00-d-741081.jpg",
+  "specs": "helmets",
+  "id": "24"
+ },
+ {
+  "name": "GIRO TREMOR YOUTH HELMET - MATTE BRIGHT GREEN",
+  "price": "49",
+  "description": "When every curb is a jump and every patch of dirt screams for a skid, the Tremor™ is there to keep smiles wide, even when temporary limits are found. Some of the best technologies from the adult line, like In-Mold construction and the acclaimed Roc Loc® Sport system, offer the versatility, comfort, and wide adjustability young riders need to ride confidently. And with plenty of fun colors to choose from, there's a perfect option to match the thrill of riding and the feeling of joy after that first ride or lap around the pumptrack.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/6a/79/20/251438-00-d-494061.jpg",
+  "specs": "helmets",
+  "id": "25"
+ },
+ {
+  "name": "FOX FLEXAIR PRO FIRE ALPHA MTB PANTS - BLACK",
+  "price": "104",
+  "description": "The Flexair Pro Fire Alpha Pants® are a real game changer.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/4b/f8/2b/fox-flexair-pro-fire-alpha-hose-black-858965.jpg",
+  "specs": "pants",
+  "id": "26"
+ },
+ {
+  "name": "ENDURA HUMMVEE SHORTS II - OLIVE GREEN",
+  "price": "60",
+  "description": "The Endura Hummvee MTB Short is made of durable Nylon mini-ripstop fabric with DWR finish. Includes a Clickfast detachable liner with 200 series pad. The short is equipped with zipped thigh vents with mesh inserts, zipped hand pockets, cargo pockets and large rear map pockets, durable, seamless seat panel, rear elasticated waistband and adjustable belt. High mobility multi-use versatility.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/09/25/7d/endura-hummvee-shorts-ii-8-960486.jpg",
+  "specs": "pants",
+  "id": "27"
+ },
+ {
+  "name": "GONSO ALVAO WOMEN'S THERMAL BIKE SHORTS - DIVA PINK",
+  "price": "75",
+  "description": "The Gonso ALVAO W overshorts for women made of Primaloft material keep you warm and protected from the weather on those cold winter days. You can wear them on top of any thermal bike shorts or trousers to enjoy great thermal insulation and keep yourself protected from the elements thanks to Primaloft synthetic down.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/a1/0d/64/gonso-alvao-womens-thermal-bike-shorts-diva-pink-1-1056888.jpg",
+  "specs": "pants",
+  "id": "28"
+ },
+ {
+  "name": "GIRO HAVOC PANTS WOMEN - BLACK",
+  "price": "118",
+  "description": "Racing and riding in cold temps and variable conditions is part of the life you choose, so seasonal riding apparel needs to be up for the challenge.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/97/b8/ba/341465-00-d-723894.jpg",
+  "specs": "pants",
+  "id": "29"
+ },
+ {
+  "name": "FOX WOMENS FLEXAIR MTB BIB SHORTS - BLACK",
+  "price": "60",
+  "description": "If your checklist for a great ride includes the freedom to move around with maximum flow, the Flexair Bib Shorts have to be on that list.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/f9/17/93/fox-flexair-mtb-damen-traegershorts-black-1-1045058.jpg",
+  "specs": "pants",
+  "id": "30"
+ },
+ {
+  "name": "MAAP WOMEN'S FLOW PRO JERSEY - SAGE",
+  "price": "140",
+  "description": "oll through your high-intensity efforts with ease. Designed with recycled yarns and in the signature Pro fit, this lightweight jersey forms closely to your body for performance efficiency. Featuring a combination of three breathable, moisture-wicking Italian fabrics with SPF50+ protection, leaving you race ready anytime you hit the road.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/bd/74/e6/maap-womens-flow-pro-jersey-sage-6-1065584.jpg",
+  "specs": "jersey",
+  "id": "31"
+ },
+ {
+  "name": "ALE FIORI WINTER LONGSLEEVE LADY JERSEY - NAVY BLUE",
+  "price": "81.00",
+  "description": "The long sleeve jersey Fiori, from the PRR line is a beautiful combination of design and functionality. The long-sleeved jersey scores stylishly with the unique feminine graphics of Ale. The soft, breathable and quick-drying fabrics keep the wearer warm on cool days. The ergonomic fit guarantees comfort.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/9d/15/34/ale-fiori-winter-lady-jersey-navy-blue-2-882549.jpg",
+  "specs": "jersey",
+  "id": "32"
+ },
+ {
+  "name": "FOX DEFEND MTB LONGSLEEVE JERSEY - BLACK",
+  "price": "45",
+  "description": "This is durability you can trust on the mountain.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/a1/a6/c0/fox-defend-mtb-longsleeve-jersey-3-948467.jpg",
+  "specs": "jersey",
+  "id": "33"
+ },
+ {
+  "name": "VAUDE WOMEN'S QIMSA LS T-SHIRT - DARK SEA",
+  "price": "54",
+  "description": "The Women's Qimsa LS T-shirt is a functional, very comfortable underwear for the next winter bike trip! The environmentally friendly jersey is made largely from recycled polyester ; stretchy elastane also ensures that the Women's Qimsa LS T-shirt follows every movement on the bike. The women's jersey is softly brushedon the inside, highly breathable and elastic - and thus ensures an excellent body climate.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/41/1b/53/vaude-womens-qimsa-ls-t-shirt-dark-sea-1-1014808.jpg",
+  "specs": "jersey",
+  "id": "34"
+ },
+ {
+  "name": "FOX RANGER MTB SHORTSLEEVE JERSEY - FOX - BLACK",
+  "price": "41",
+  "description": "All the performance of technical fabric but with the comfort of your favorite tee, the Ranger Block Jersey lives to keep you cool when you hit the trail.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/d6/70/e1/fox-ranger-shortsleeve-jersey-fox-3-951443.jpg",
+  "specs": "jersey",
+  "id": "35"
+ },
+ {
+  "name": "TROY LEE DESIGNS SCOUT GP JERSEY - PEACE & WHEELIES BURGUNDY/DARK",
+  "price": "51",
+  "description": "Made for the enthusiast, the Scout GP gear combines technology, style, and fit for a fast look on every trail. The Scout GP Jersey is made with a micro-holed mesh polyester and wicking quick dry finishes to keep air flowing. A minimalist cuff design, ribbed street v-neck collar, and reflective graphics in key areas provide a classic look and safety.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/9d/0e/15/troy-lee-designs-scout-gp-jersey-peace-wheelies-burgundy-dark-01-1064154.jpg",
+  "specs": "jersey",
+  "id": "36"
+ },
+ {
+  "name": "SPECIALIZED EPIC EXPERT - 29 CARBON MOUNTAINBIKE",
+  "price": "7700",
+  "description": "The Specialized EPIC EXPERT features stiffness in the rear triangle for unparalleled power transfer and offers the most powerful handling of any Epic yet - all while saving weight over the previous generation Epic.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/a0/a0/17/90322-31-epic-expert-carb-smk-wht-1109695.jpg",
+  "specs": " mtb",
+  "id": "37"
+ },
+ {
+  "name": "SANTA CRUZ NOMAD CC COIL - X01 - 27.5",
+  "price": "8500",
+  "description": "The bike in the Santa Cruz range that is used for the roughest nonsense. And every Nomad can tell you about its own wild journey. Santa Cruz has taken this into account when designing the bike - rubberized frame protectors in the most important places and greasable bearings that sit in extra strong aluminum rockers - All this keeps your bike fresh and can be easily replaced if the worst happens.",
+  "imageURL": "https://images.bike24.net/media/720/i/mb/0a/64/22/santa-nomad-01-1116540.jpg",
+  "specs": "mtb",
+  "id": "38"
+ },
+ {
+  "name": "LITEMOVE TS-SP E-BIKE REAR LIGHT",
+  "price": "17",
+  "description": "A bright, reliable rear light is a safety essential in traffic! The Litemove e-bike TS-SP tail light can be integrated on the seat post. Maximum visibility comes courtesy of four powerful LEDs and the LTi technology wrapped up in a German road traffic regulation-approved unit.",
+  "imageURL": "https://cd.bike-discount.de/media/image/21/2e/56/Litemove-TS-SP-1.jpg",
+  "specs": "electronics",
+  "id": "39"
+ },
+ {
+  "name": "BUSCH + MÜLLER IQ X E FOR E-BIKE LED HEADLIGHT",
+  "price": "88",
+  "description": "The IQ X by Busch  Müller high-end headlights for ebikes.The IQ-X by Busch + Müller. Its newly developed lighting technology makes it possible for the first time to reach the 150 Lux mark with an ebike headlamp   with a very wide, wide and homogenous large area illumination of the road.",
+  "imageURL": "https://cd.bike-discount.de/media/image/2b/5d/06/164R60TS7-01_1WGyOKQldf61sJ.jpg",
+  "specs": "electronics",
+  "id": "40"
+ },
+ {
+  "name": "BOSCH BATTERY POWERTUBE 625 HORIZONTAL",
+  "price": "720",
+  "description": "The new PowerTube 625 from Bosch lets you enjoy long and mountainous rides, while still reserving plenty of energy for every adventure. Thanks to a rated capacity of 16.7 Ah and approx. 625 Wh energy content, the lithium-ion battery brings maximum ranges and altitudes within your grasp.",
+  "imageURL": "https://cd.bike-discount.de/media/image/32/8a/9e/Bosch-Akku-Powertube-625-Horizontal-0275007543_a.jpg",
+  "specs": "electronics",
+  "id": "41"
+ },
+ {
+  "name": "BOSCH FAST CHARGER 6A EUROPA",
+  "price": "116",
+  "description": "The Bosch Fast Charger is currently the fastest eBike charger in its class and will recharge the eBike battery in the shortest possible time. After just three hours, the powerful PowerTube 500 or PowerPack 500 are fully recharged.",
+  "imageURL": "https://cd.bike-discount.de/media/image/0f/57/56/Bosch-Fast-Charger-6A-Europa-4047025782074.jpg",
+  "specs": "electronics",
+  "id": "42"
+ },
+ {
+  "name": "GARMIN EDGE 1030 PLUS - GPS BIKE COMPUTER",
+  "price": "446",
+  "description": "The top model Edge 1030 Plus from Garmin is a high quality GPS navigation system for your bike, with many improved features. The large touchscreen shows the most important information clearly and is very easy to use.",
+  "imageURL": "https://cd.bike-discount.de/media/image/65/7a/ed/Garmin-Edge-1030-Plus-Fahrrad-GPS-Navigationssystem-Verpackung-010-02424-10_e_800x800.jpg",
+  "specs": "electronics",
+  "id": "43"
+ },
+ {
+  "name": "CICLOSPORT NAVIC 400 GPS BIKE COMPUTER",
+  "price": "175",
+  "description": "The Navic 400 from Ciclosport begins a new era of bike computers. This bike navigation system sets standards in terms of intuitive operation, comfort and readability. With one of the largest displays on the market it is the ideal device for every biker - whether sporty, for commuting or for touring.",
+  "imageURL": "https://cd.bike-discount.de/media/image/b1/79/94/ciclosport-10520400-navic-400-bild-1.jpg",
+  "specs": "electronics",
+  "id": "44"
+ },
+ {
+  "name": "GIRO TYRANT SPHERICAL - MTB HELMET",
+  "price": "130",
+  "description": "AThe Tyrant MIPS helmet is designed to meet the needs of todays progressive trail riders. Equally at home on forest singletrack as it is at the dirt jumps, Tyrants attitude ushers in the modern era of mountain biking.",
+  "imageURL": "https://cd.bike-discount.de/media/image/18/c9/7a/giro_tyrant_spherical_mtb_helm_200245-016_1_mips.jpg",
+  "specs": "helmets",
+  "id": "45"
+ },
+ {
+  "name": "POC KORTAL RACE MIPS - MTB HELMET",
+  "price": "250",
+  "description": "The POC Kortal MIPS offers lightweight, advanced protection and a seamless fit with goggles. With extended protection zones and uninterrupted ventilation you will find safety and comfort - so you are well equipped for endless trail rides and nothing can stop you.",
+  "imageURL": "https://cd.bike-discount.de/media/image/e7/d0/a4/POC_Kortal_Race_MIPS_MTB_Helm_10521-8347-XS-S-51-54-CM-_MIPS.jpg",
+  "specs": "helmets",
+  "id": "46"
+ },
+ {
+  "name": "SIDI TRACE 2 - MTB SHOES",
+  "price": "135",
+  "description": "The new Trace 2 convinces with the Tecno-3 twist lock system as well as the new MTB RS17 sole, both of which provide even better grip in the shoe. Manufactured in the first-class SIDI quality, the Trace 2 offers an excellent price-performance ratio.",
+  "imageURL": "https://cd.bike-discount.de/media/image/70/09/46/Sidi_Trace_2_10157453_black_black.jpg",
+  "specs": "shoes",
+  "id": "47"
+ },
+ {
+  "name": "LIVALL EVO21 - HELMET WITH TURN SIGNAL",
+  "price": "110",
+  "description": "The EVO21 offers a true 360° concept, with a brake warning light, turn signals, rear and front light. With 30% more ventilation and a weight of 350g, you'll always be one step ahead of the competition, keep a cool head and glide through the wind without air resistance. In case of a fall, it sends an SMS alert with your exact GPS position to your emergency contacts.",
+  "imageURL": "https://cd.bike-discount.de/media/image/ce/cd/d4/Livall_EVO21-Helm_32001102_1.jpg",
+  "specs": "helmets",
+  "id": "48"
+ },
+ {
+  "name": "OAKLEY O FRAME 2.0 PRO MX XS CLEAR - GOGGLE",
+  "price": "29",
+  "description": "The O Frame 2.0 PRO MX XS offers the style and performance of the O Frame 2.0 PRO, upgraded to a youthful fit for protection, comfort and performance, bringing the best of Oakley innovation to smaller faces.",
+  "imageURL": "https://cd.bike-discount.de/media/image/6a/8a/57/Oakley_O-Frame-2-0-Pro-MX-XS-Clear-Goggle_OO7116_MASTER.jpg",
+  "specs": "googles",
+  "id": "49"
+ },
+ {
+  "name": "OAKLEY AIRBRAKE MTB PRIZM LOW LIGHT - GOGGLE",
+  "price": "115",
+  "description": "From motocross to enduro to freestyle, dirt track and beyond, Troy Lee Designs continues to lead the chase pack in innovative color creation and surfacing. Oakley’s Troy Lee Collection puts TLD’s unique color modeling on frames that offers changing hues when exposed to variances in shade and sunlight.From enduro to downhill, dustyour competition and say goodbye to fogging, heat build-up and debris with the Airbrake MTB goggle. The exclusive Factory Lite Vent mesh is designed to provide increased airflowand ventilation at slower speeds while helping to prevent mud, debris, and rocks from entering the goggle.",
+  "imageURL": "https://cd.bike-discount.de/media/image/f1/7a/47/oakley_airbrake-mtb-prizm-low-light-goggle_oo7107-11__281_29.jpg",
+  "specs": "goggles",
+  "id": "50"
+ }
+]

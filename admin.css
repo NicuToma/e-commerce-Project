@@ -36,6 +36,11 @@ body {
   margin: auto;
 }
 
+.wrapper > .logo img:hover {
+  transform: rotateY(360deg);
+  transition-duration: 2s;
+}
+
 .wrapper > .logo img {
   width: 100%;
   height: 80px;
