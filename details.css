@@ -2,16 +2,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
-body {
-  background-color: #cdcdcd;
+
+.container-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.product-details {
+  display: flex;
+  width: 100%;
+  height: 90vh;
 }
 
 .card {
   display: flex;
   flex-direction: row;
-  width: 99vw;
-  height: auto;
+  height: 90vh;
   padding: 10px;
   gap: 10px;
   background-color: white;
@@ -19,21 +28,29 @@ body {
   margin: 5px;
 }
 
-.card-header {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
 .fotoCard {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+  width: 40%;
+  height: 90vh;
   align-items: center;
   gap: 20px;
 }
 
-.fotoCard img {
-  max-width: 300x;
-  height: 150px;
+.resizeImg {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 10px;
+  align-items: center;
+  gap: 5px;
 }
 
 #productPrice {
@@ -48,6 +65,7 @@ body {
 .add-to-cart {
   text-decoration: none;
   color: #121311;
+  font-weight: bolder;
   padding: 2px;
   background-color: #cdcdcd;
   border: 2px solid #666666;
@@ -59,8 +77,11 @@ body {
 }
 
 .productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   font-size: 0.7em;
   text-align: justify;
   padding: 10px;
-  width: 60%;
+  width: 50%;
 }

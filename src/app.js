@@ -11,7 +11,7 @@ async function fetchProducts() {
     .map(
       (product) =>
         `<div class="product-card">
-            <h5>${product.name}</h5>
+            <h5 id="name">${product.name}</h5>
             <img src=${product.imageURL} alt="image missing" />
             <div class="price">
                 <span class="priceOf">Price: € </span>
@@ -41,7 +41,7 @@ async function fetchProductsBikes() {
     .map(
       (product) =>
         `<div class="product-card">
-                <h5>${product.name}</h5>
+                <h5 id="name">${product.name}</h5>
                 <img src=${product.imageURL} alt="image missing" />
                 <div class="price">
                     <span class="priceOf">Price: € </span>
@@ -71,7 +71,7 @@ async function fetchProductsProtection() {
     .map(
       (product) =>
         `<div class="product-card">
-                <h5>${product.name}</h5>
+                <h5 id="name">${product.name}</h5>
                 <img src=${product.imageURL} alt="image missing" />
                 <div class="price">
                     <span class="priceOf">Price: € </span>
@@ -101,7 +101,7 @@ async function fetchProductsWear() {
     .map(
       (product) =>
         `<div class="product-card">
-                <h5>${product.name}</h5>
+                <h5 id="name">${product.name}</h5>
                 <img src=${product.imageURL} alt="image missing" />
                 <div class="price">
                     <span class="priceOf">Price: € </span>

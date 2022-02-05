@@ -1,12 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
-  /* background-color: #1f1f1f; */
 }
 
 .containerHome {
@@ -78,7 +77,7 @@ a:hover {
 }
 
 #banner {
-  width: 80%;
+  width: 75%;
   height: auto;
 }
 
@@ -120,8 +119,9 @@ a:hover {
   box-shadow: 0px 0px 5px 5px gray;
 }
 
-.product-card h5 {
+#name {
   margin: 5px;
+  font-size: 0.9em;
 }
 
 .price {
