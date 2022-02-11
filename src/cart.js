@@ -1,88 +1,89 @@
-window.addEventListener("load", cartItems);
-function cartItems() {
-  let cart = localStorage.getItem("cart");
+let total = 0;
+let cart = JSON.parse(localStorage.getItem("cart"));
 
-  let cartItems = JSON.parse(cart);
-  console.log(cartItems);
-  const productCard = cartItems
-    .map(
-      (product) =>
-        `<div class="cart-item-card">
-            <img src=${product.imageURL} alt="image missing" />
-            <h5>${product.name}</h5>
-            
-            <div class="quantity">
-                <input type="button" value="-" class="countDown" />
-      
-                <p class="count">1</p>
-      
-                <input type="button" value="+" class="countUp" />
-            </div>
-            <div class="price">
-                <span class="priceValue"> ${product.price}</span>
-            </div>
-            <button classs="update">Update</button>
-            <button class="deleteItem"><i class="fas fa-trash-alt"></i></button>
-            <span class="itemTotalPrice">0</span>
-                  
-        </div>
-      
-      </div>`
-    )
-    .join("");
+window.addEventListener("load", () => {
+  console.log(cart);
+  // let total = 0;
 
-  document.querySelector(".cart-items").innerHTML = productCard;
-
-  //count items in cart
-  let itemNumber = cartItems.length;
-  document.querySelector(".countProducts").innerHTML = itemNumber;
-  totalProductPrice();
-
-  let plus = document.querySelector(".countUp");
-  let minus = document.querySelector(".countDown");
-  let value = Number(document.querySelector(".count").innerHTML);
-
-  // let counterParagraph = document.querySelector(".count");
-
-  plus.addEventListener("click", incrementNumber);
-  minus.addEventListener("click", decrementNumber);
-
-  function incrementNumber() {
-    if (value < 100) {
-      value++;
-    } else {
-      value = 1;
-    }
-    document.querySelector(".count").innerHTML = value;
+  if (cart.length == 0) {
+    document.querySelector(".sumary").innerHTML = ` <a href="index.html"
+    ><img src="./logo/mountain-bike.png" alt="logo"
+  />Continue Shopping</a>`;
   }
-  function decrementNumber() {
-    if (value > 1) {
-      value--;
-    } else {
-      value = 1;
-    }
+  //calculate toatal price
+  if (cart) {
+    cart.forEach((product) => {
+      total = total + Number(product.price) * product.itemNo;
+      // console.log(typeof product.itemNo);
+      // console.log(product.price);
+    });
+    const productCard = cart
+      .map(
+        (product) =>
+          `<div class="cart-item-card" >
+              <img src=${product.imageURL} alt="image missing" />
+              <h5 class="productName">${product.name}</h5>
+              <div class="quantity">
+                <button item-id=${product.id} class="decreaseNoOfProducts"> - </button>
+                    <span  class="count-products">${product.itemNo}</span>
+                <button item-id=${product.id} class="increaseNoOfProducts "> + </button>
+              </div>          
+              <p item-id=${product.id} class="priceValue">Price: ${product.price}</p>  
+                   
+              <button item-id=${product.id} class="deleteItem"><i item-id=${product.id} class="fas fa-trash-alt"></i></button>                     
+          </div> `
+      )
+      .join("");
+    document.querySelector(".cart-items").innerHTML = productCard;
 
-    document.querySelector(".count").innerHTML = value;
+    let totalPrice = ` ${total}`;
+    // console.log(totalPrice);
+    document.querySelector(".sumOfProducts").innerHTML = totalPrice;
+    // console.log(Number(totalPrice));
   }
-  //count total product price
+});
 
-  function totalProductPrice() {
-    let price = Number(document.querySelector(".priceValue").innerHTML);
-    let countItem = Number(document.querySelector(".count").innerHTML);
-    let itemPrice = Number(price) * Number(countItem);
-    document.querySelector(".itemTotalPrice").innerHTML = itemPrice;
+const cartItemsContainer = document.querySelector(".cart-body");
+cartItemsContainer.addEventListener("click", CartActions);
+// Cart actions
+function CartActions(event) {
+  const targetButton = event.target;
+  console.log(event.target);
+  let cart = JSON.parse(localStorage.getItem("cart"));
+
+  let itemInCart = cart.find(
+    (itemFromCart) => itemFromCart.id == targetButton.getAttribute("item-id")
+  );
+  let quantityParagraph = targetButton.parentNode.parentNode;
+  console.log(quantityParagraph);
+
+  // increase quantity
+
+  if (targetButton.classList.contains("increaseNoOfProducts")) {
+    console.log(itemInCart.itemNo);
+    itemInCart.itemNo++;
+  } else if (targetButton.classList.contains("decreaseNoOfProducts")) {
+    if (itemInCart.itemNo > 1) {
+      itemInCart.itemNo--;
+    }
+    //delete product
+  } else if (targetButton.classList.contains("fa-trash-alt")) {
+    itemInCart.itemNo = 0;
+    cart = cart.filter((product) => product.id != itemInCart.id);
+    targetButton.parentNode.parentNode.remove();
   }
 
-  //delete product
-  btns = document.getElementsByClassName("deleteItem");
-  for (let i = 0; i <= btns.length - 1; i++) {
-    btns[i].addEventListener("click", deleteItem);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  //Total price update
+  if (itemInCart) {
+    quantityParagraph.querySelector(".count-products").innerHTML =
+      itemInCart.itemNo;
 
-    function deleteItem(event) {
-      let deleteBtn = event.target;
-      if (deleteBtn.classList.contains("fas")) {
-        deleteBtn.parentNode.parentNode.remove();
-      }
-    }
+    let total = 0;
+    cart.forEach((product) => {
+      total = total + Number(product.price) * product.itemNo;
+    });
+    let totalPrice = ` ${total}`;
+    document.querySelector(".sumOfProducts").innerHTML = totalPrice;
   }
 }

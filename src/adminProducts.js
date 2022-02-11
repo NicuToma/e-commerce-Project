@@ -15,19 +15,47 @@ async function fetchProducts() {
                </div>              
                
                <div class="admin-price">
-                   <span id="adminProductPrice">Price: €  </span>
-                   <span id="adminProductPriceValue">${product.price}</span>
+                   <span class="adminProductPrice">Price: €  </span>
+                   <span class="adminProductPriceValue">${product.price}</span>
                 </div>
                 <div class="productDetails">
                     <p>${product.description}</p>
                 </div>
                 <div class="edit">
-                    <a href="#" id="deleteItem"><i class="far fa-trash-alt"></i></a>
-                    <a href="#" id="editItem"><i class="far fa-edit"></i></a>
+                    <a href="#" class="deleteItem"><i item-id=${product.id} class="far fa-trash-alt"></i></a>
+                    <a href="#" class="editItem"><i item-id=${product.id} class="far fa-edit"></i></a>
                 </div>
 
         </div>`
     )
     .join("");
   document.querySelector(".admin-products").innerHTML = productCardsString;
+
+  //delete product
+  let btns = document.querySelectorAll(".fa-trash-alt");
+
+  for (let i = 0; i <= btns.length - 1; i++) {
+    btns[i].addEventListener("click", deleteItem);
+    function deleteItem(event) {
+      let deleteBtn = event.target;
+      console.log(event.target);
+      if (deleteBtn.classList.contains("fa-trash-alt")) {
+        deleteBtn.parentNode.parentNode.parentNode.remove();
+
+        console.log(deleteBtn);
+      }
+    }
+  }
+  let edit = document.querySelectorAll(".fa-edit");
+
+  for (let j = 0; j <= edit.length - 1; j++) {
+    edit[j].addEventListener("click", editItem);
+    function editItem(event) {
+      let editBtn = event.target;
+      console.log(event.target);
+      if (editBtn.classList.contains("fa-trash-alt")) {
+        console.log(event.target);
+      }
+    }
+  }
 }

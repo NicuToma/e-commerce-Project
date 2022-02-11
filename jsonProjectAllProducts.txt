@@ -347,7 +347,7 @@
   "name": "CICLOSPORT NAVIC 400 GPS BIKE COMPUTER",
   "price": "175",
   "description": "The Navic 400 from Ciclosport begins a new era of bike computers. This bike navigation system sets standards in terms of intuitive operation, comfort and readability. With one of the largest displays on the market it is the ideal device for every biker - whether sporty, for commuting or for touring.",
-  "imageURL": "https://cd.bike-discount.de/media/image/b1/79/94/ciclosport-10520400-navic-400-bild-1.jpg",
+  "imageURL": "https://media.stonefeet.ro/media/catalog/product/cache/338126c9326aac1a7471bbee05684cf8/g/p/gps-garmin-edge-530_14830_1_1585600273_vlze2wjwbsem8i3r.jpg",
   "specs": "electronics",
   "id": "44"
  },

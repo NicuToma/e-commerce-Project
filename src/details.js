@@ -19,7 +19,7 @@ window.addEventListener("load", async () => {
                   <p id="productPrice">Price: €  </p>
                   <p id="productPriceValue">${product.price}</p>
                </div>  
-               <button id=${product.id} class="add-to-cart  ">Add to cart</button>      
+               <button item-id=${product.id} class="add-to-cart  ">Add to cart</button>      
                                
           
           </div>   
@@ -37,8 +37,9 @@ window.addEventListener("load", async () => {
 document.querySelector(".product-details").addEventListener("click", addToCart);
 async function addToCart(event) {
   const addToCartBtn = event.target;
+  console.log(event.target);
 
-  let productId = addToCartBtn.getAttribute("id");
+  let productId = addToCartBtn.getAttribute("item-id");
 
   const productURL = `https://61e06cc763f8fc0017618752.mockapi.io/products/${productId}`;
   const result = await fetch(productURL);
@@ -53,11 +54,9 @@ async function addToCart(event) {
 
     if (addedItem != undefined) {
       addedItem.itemNo++;
-      console.log("Produsul exista in cos");
     } else {
-      const itemToAdd = { ...product, noOfProducts: 1 };
+      const itemToAdd = { ...product, itemNo: 1 };
       cart.push(itemToAdd);
-      console.log("Produsul a fost adaugat prima oara in cos");
     }
   }
 

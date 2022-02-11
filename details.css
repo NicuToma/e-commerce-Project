@@ -74,6 +74,7 @@
 
 .add-to-cart:hover {
   background-color: dodgerblue;
+  cursor: pointer;
 }
 
 .productDetails {

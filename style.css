@@ -48,6 +48,16 @@ body {
   transition-duration: 2s;
 }
 
+#title {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 .menu,
 .cart,
 .admin {
@@ -165,5 +175,6 @@ a:hover {
 }
 
 .product-card .details:hover {
-  color: dodgerblue;
+  background-color: dodgerblue;
+  font-weight: bold;
 }

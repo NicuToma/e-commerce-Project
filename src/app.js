@@ -5,7 +5,6 @@ async function fetchProducts() {
     "https://61e06cc763f8fc0017618752.mockapi.io/products"
   );
   let products = await result.json();
-  console.log(products);
 
   let productCardsString = products
     .map(
