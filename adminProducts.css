@@ -5,7 +5,82 @@
   font-family: "Roboto";
 }
 
-.admin-product-card {
+.edit-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-product {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+
+.table {
+  width: 80vw;
+}
+
+.productRow {
+  font-size: 0.5em;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  text-align: justify;
+}
+
+.prodName,
+.prodPrice {
+  font-weight: 900;
+}
+
+.card-foto img {
+  width: 50px;
+  height: auto;
+}
+
+.far {
+  font-size: 1.8em;
+}
+
+.new-product-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+
+.form-group input {
+  height: 20px;
+}
+
+#update,
+#add,
+#showInputs {
+  width: 200px;
+  height: 30px;
+  margin: 5px;
+  background-color: #666666;
+  height: 40px;
+}
+#update:hover,
+#add:hover,
+#showInputs:hover {
+  background-color: dodgerblue;
+  font-weight: bold;
+}
+
+/* .admin-product-card {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,12 +101,12 @@
   gap: 5px;
 }
 
-.card-foto img {
+/* .card-foto img {
   width: 50px;
   height: auto;
-}
+} */
 
-h6 {
+/* h6 {
   font-size: 0.5em;
 }
 
@@ -77,4 +152,4 @@ h6 {
 
 .far:hover {
   color: dodgerblue;
-}
+} */

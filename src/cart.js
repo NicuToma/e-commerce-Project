@@ -3,26 +3,28 @@ let cart = JSON.parse(localStorage.getItem("cart"));
 
 window.addEventListener("load", () => {
   console.log(cart);
-  // let total = 0;
 
+  // if empty cart return shopping
   if (cart.length == 0) {
-    document.querySelector(".sumary").innerHTML = ` <a href="index.html"
+    document.querySelector(".cart-body").innerHTML = ` <a href="index.html" 
     ><img src="./logo/mountain-bike.png" alt="logo"
-  />Continue Shopping</a>`;
+    />Your cart is empty: Back to store!</a>`;
   }
   //calculate toatal price
+
   if (cart) {
     cart.forEach((product) => {
       total = total + Number(product.price) * product.itemNo;
-      // console.log(typeof product.itemNo);
-      // console.log(product.price);
     });
     const productCard = cart
       .map(
         (product) =>
           `<div class="cart-item-card" >
-              <img src=${product.imageURL} alt="image missing" />
+          <div class="imgName">
+              <a href="detail.html?id=${product.id}"><img src=${product.imageURL} alt="image missing" /></a>
               <h5 class="productName">${product.name}</h5>
+          </div>
+              
               <div class="quantity">
                 <button item-id=${product.id} class="decreaseNoOfProducts"> - </button>
                     <span  class="count-products">${product.itemNo}</span>
@@ -37,14 +39,14 @@ window.addEventListener("load", () => {
     document.querySelector(".cart-items").innerHTML = productCard;
 
     let totalPrice = ` ${total}`;
-    // console.log(totalPrice);
+
     document.querySelector(".sumOfProducts").innerHTML = totalPrice;
-    // console.log(Number(totalPrice));
   }
 });
 
 const cartItemsContainer = document.querySelector(".cart-body");
 cartItemsContainer.addEventListener("click", CartActions);
+
 // Cart actions
 function CartActions(event) {
   const targetButton = event.target;
@@ -74,6 +76,12 @@ function CartActions(event) {
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
+  if (cart.length == 0) {
+    document.querySelector(".cart-body").innerHTML = ` <a href="index.html" 
+    ><img src="./logo/mountain-bike.png" alt="logo"
+    />Your cart is empty: Back to store!</a>`;
+  }
+
   //Total price update
   if (itemInCart) {
     quantityParagraph.querySelector(".count-products").innerHTML =
@@ -85,5 +93,9 @@ function CartActions(event) {
     });
     let totalPrice = ` ${total}`;
     document.querySelector(".sumOfProducts").innerHTML = totalPrice;
+  }
+  document.querySelector(".checkout").addEventListener("click", checkout);
+  function checkout() {
+    alert("YOU WILL BE REDIRECTED TO THE PAYMENT PAGE! ");
   }
 }

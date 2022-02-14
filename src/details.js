@@ -54,6 +54,7 @@ async function addToCart(event) {
 
     if (addedItem != undefined) {
       addedItem.itemNo++;
+      alert("Your product have been added to cart!");
     } else {
       const itemToAdd = { ...product, itemNo: 1 };
       cart.push(itemToAdd);

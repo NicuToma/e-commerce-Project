@@ -8,7 +8,8 @@ body {
   padding: 0;
 }
 
-.containerHome {
+.containerHome,
+.adminContainer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -152,14 +153,13 @@ a:hover {
 }
 
 .details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   width: 80%;
   position: absolute;
-  bottom: 5px;
-  background-color: #cdcdcd;
-  border-radius: 3px;
+  bottom: 2px;
+  margin: 5px;
+  color: white;
+  background-color: #666666;
+  border-radius: 5px;
   cursor: pointer;
 }
 

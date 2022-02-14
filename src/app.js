@@ -25,6 +25,9 @@ async function fetchProducts() {
   document.querySelector(".products-cards-grid").innerHTML = productCardsString;
 }
 
+let allProducts = document.getElementById("allProducts");
+allProducts.addEventListener("click", fetchProducts);
+
 let bikes = document.getElementById("bikes");
 
 bikes.addEventListener("click", fetchProductsBikes);

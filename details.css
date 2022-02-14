@@ -20,7 +20,7 @@
 .card {
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  height: 80vh;
   padding: 10px;
   gap: 10px;
   background-color: white;
@@ -33,7 +33,7 @@
   flex-direction: column;
   margin-top: 10px;
   width: 40%;
-  height: 90vh;
+  height: 80vh;
   align-items: center;
   gap: 20px;
 }
@@ -64,16 +64,16 @@
 
 .add-to-cart {
   text-decoration: none;
-  color: #121311;
-  font-weight: bolder;
+  color: white;
   padding: 2px;
-  background-color: #cdcdcd;
-  border: 2px solid #666666;
   border-radius: 5px;
+  margin: 5px;
+  background-color: #666666;
 }
 
 .add-to-cart:hover {
   background-color: dodgerblue;
+  font-weight: bold;
   cursor: pointer;
 }
 
