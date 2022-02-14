@@ -54,6 +54,7 @@
 .quantity {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 5px;
 }
 
@@ -64,10 +65,12 @@
   background-color: transparent;
   background-repeat: no-repeat;
   font-weight: bolder;
+  cursor: pointer;
 }
 
-.deleteItem {
-  cursor: pointer;
+.decreaseNoOfProducts:hover,
+.increaseNoOfProducts:hover {
+  font-size: 1.8em;
 }
 
 .deleteItem:hover {

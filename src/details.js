@@ -8,26 +8,20 @@ window.addEventListener("load", async () => {
 
   const productCard = `
       <div class="card">
-           
           <div class="fotoCard">
-              
               <h6>${product.name}</h6>
-              <img src=${product.imageURL} alt="image missing" class="resizeImg" onclick="fullSize()"/>
-                
-              
+              <img src=${product.imageURL} alt="image missing" class="resizeImg" onclick="fullSize()"/>                          
               <div class="price">
                   <p id="productPrice">Price: €  </p>
                   <p id="productPriceValue">${product.price}</p>
                </div>  
-               <button item-id=${product.id} class="add-to-cart  ">Add to cart</button>      
-                               
-          
+               <button item-id=${product.id} class="add-to-cart  ">Add to cart</button>                           
           </div>   
                	           
-              <div class="productDetails">
-                  <h2>Product Details</h2>
-	  			        <p>${product.description}</p>
-		          </div>
+          <div class="productDetails">
+                <h2>Product Details</h2>
+	  			      <p>${product.description}</p>
+		      </div>
             
       </div>        
   `;
@@ -37,7 +31,6 @@ window.addEventListener("load", async () => {
 document.querySelector(".product-details").addEventListener("click", addToCart);
 async function addToCart(event) {
   const addToCartBtn = event.target;
-  console.log(event.target);
 
   let productId = addToCartBtn.getAttribute("item-id");
 
@@ -54,15 +47,12 @@ async function addToCart(event) {
 
     if (addedItem != undefined) {
       addedItem.itemNo++;
-      alert("Your product have been added to cart!");
+      window.alert("Your product have been added to cart!");
     } else {
       const itemToAdd = { ...product, itemNo: 1 };
       cart.push(itemToAdd);
     }
   }
 
-  console.log(cart);
   if (cart.length > 0) localStorage.setItem("cart", JSON.stringify(cart));
-
-  console.log(cart);
 }

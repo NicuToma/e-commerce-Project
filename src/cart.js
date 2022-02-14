@@ -2,8 +2,6 @@ let total = 0;
 let cart = JSON.parse(localStorage.getItem("cart"));
 
 window.addEventListener("load", () => {
-  console.log(cart);
-
   // if empty cart return shopping
   if (cart.length == 0) {
     document.querySelector(".cart-body").innerHTML = ` <a href="index.html" 
@@ -50,19 +48,17 @@ cartItemsContainer.addEventListener("click", CartActions);
 // Cart actions
 function CartActions(event) {
   const targetButton = event.target;
-  console.log(event.target);
+
   let cart = JSON.parse(localStorage.getItem("cart"));
 
   let itemInCart = cart.find(
     (itemFromCart) => itemFromCart.id == targetButton.getAttribute("item-id")
   );
   let quantityParagraph = targetButton.parentNode.parentNode;
-  console.log(quantityParagraph);
 
   // increase quantity
 
   if (targetButton.classList.contains("increaseNoOfProducts")) {
-    console.log(itemInCart.itemNo);
     itemInCart.itemNo++;
   } else if (targetButton.classList.contains("decreaseNoOfProducts")) {
     if (itemInCart.itemNo > 1) {

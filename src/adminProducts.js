@@ -61,7 +61,6 @@ async function fetchProducts() {
         let response = await fetch(`${productsURL}/${productId}`, {
           method: "DELETE",
         });
-        console.log(response);
         fetchProducts();
       }
     }
@@ -90,7 +89,6 @@ async function addNewProduct(event) {
   });
 
   let product = await response.json();
-  console.log("newProduct", product);
 
   let newProductTableRow = `<tr>
          <th scope="row">${product.id}</th>
@@ -105,16 +103,14 @@ async function addNewProduct(event) {
   productTable.innerHTML += newProductTableRow;
 }
 
+//edit product
 productTable.addEventListener("click", edit);
 
 async function edit(event) {
   const productId = event.target.getAttribute("item-id");
   if (event.target.classList.contains("fa-edit")) {
-    console.log("edit", productId);
     editProductById(productId);
   }
-
-  // fetchProducts();
 }
 
 updateProductBtn.addEventListener("click", updateProduct);
@@ -143,7 +139,7 @@ async function updateProduct(event) {
   });
 
   let data = await response.json();
-  console.log(data);
+
   fetchProducts();
 }
 
