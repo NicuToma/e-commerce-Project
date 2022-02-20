@@ -31,28 +31,29 @@ window.addEventListener("load", async () => {
 document.querySelector(".product-details").addEventListener("click", addToCart);
 async function addToCart(event) {
   const addToCartBtn = event.target;
+  if (addToCartBtn.classList.contains("add-to-cart")) {
+    let productId = addToCartBtn.getAttribute("item-id");
 
-  let productId = addToCartBtn.getAttribute("item-id");
+    const productURL = `https://61e06cc763f8fc0017618752.mockapi.io/products/${productId}`;
+    const result = await fetch(productURL);
+    const product = await result.json();
 
-  const productURL = `https://61e06cc763f8fc0017618752.mockapi.io/products/${productId}`;
-  const result = await fetch(productURL);
-  const product = await result.json();
-
-  let cart = [];
-  if (localStorage.getItem("cart") == null) {
-    cart.push({ ...product, itemNo: 1 });
-  } else {
-    cart = JSON.parse(localStorage.getItem("cart"));
-    const addedItem = cart.find((itemInCart) => itemInCart.id == product.id);
-
-    if (addedItem != undefined) {
-      addedItem.itemNo++;
-      window.alert("Your product have been added to cart!");
+    let cart = [];
+    if (localStorage.getItem("cart") == null) {
+      cart.push({ ...product, itemNo: 1 });
     } else {
-      const itemToAdd = { ...product, itemNo: 1 };
-      cart.push(itemToAdd);
-    }
-  }
+      cart = JSON.parse(localStorage.getItem("cart"));
+      const addedItem = cart.find((itemInCart) => itemInCart.id == product.id);
 
-  if (cart.length > 0) localStorage.setItem("cart", JSON.stringify(cart));
+      if (addedItem != undefined) {
+        addedItem.itemNo++;
+        window.alert("Your product have been added to cart!");
+      } else {
+        const itemToAdd = { ...product, itemNo: 1 };
+        cart.push(itemToAdd);
+      }
+    }
+
+    if (cart.length > 0) localStorage.setItem("cart", JSON.stringify(cart));
+  }
 }
