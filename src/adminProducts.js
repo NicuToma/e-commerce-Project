@@ -87,7 +87,7 @@ async function addNewProduct(event) {
       imageURL: newProductImg,
     }),
   });
-
+  fetchProducts();
   let product = await response.json();
 
   let newProductTableRow = `<tr>
