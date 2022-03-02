@@ -1,7 +1,9 @@
 let total = 0;
+let noItems = 0;
 let cart = JSON.parse(localStorage.getItem("cart"));
 
 window.addEventListener("load", () => {
+  // cartItemsNo();
   // if empty cart return shopping
   if (cart.length == 0) {
     document.querySelector(".cart-body").innerHTML = ` <a href="index.html" 
@@ -13,6 +15,7 @@ window.addEventListener("load", () => {
   if (cart) {
     cart.forEach((product) => {
       total = total + Number(product.price) * product.itemNo;
+      noItems = noItems + product.itemNo;
     });
     const productCard = cart
       .map(
@@ -39,6 +42,7 @@ window.addEventListener("load", () => {
     let totalPrice = ` ${total}`;
 
     document.querySelector(".sumOfProducts").innerHTML = totalPrice;
+    document.querySelector(".noOfItemsInCart").innerHTML = noItems;
   }
 });
 
@@ -78,17 +82,20 @@ function CartActions(event) {
     />Your cart is empty: Back to store!</a>`;
   }
 
-  //Total price update
+  //Total price update & update number of items in cart
   if (itemInCart) {
     quantityParagraph.querySelector(".count-products").innerHTML =
       itemInCart.itemNo;
 
+    let noItems = 0;
     let total = 0;
     cart.forEach((product) => {
       total = total + Number(product.price) * product.itemNo;
+      noItems = noItems + product.itemNo;
     });
     let totalPrice = ` ${total}`;
     document.querySelector(".sumOfProducts").innerHTML = totalPrice;
+    document.querySelector(".noOfItemsInCart").innerHTML = noItems;
   }
   document.querySelector(".checkout").addEventListener("click", checkout);
   function checkout() {

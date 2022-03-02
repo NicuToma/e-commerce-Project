@@ -49,7 +49,7 @@ body {
   transition-duration: 2s;
 }
 
-#title {
+.title {
   display: block;
   font-size: 1.5em;
   margin-block-start: 0.83em;
@@ -57,6 +57,7 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  flex-wrap: nowrap;
 }
 
 .menu,
@@ -66,6 +67,18 @@ body {
   flex-direction: row;
   padding: 10px;
   gap: 10px;
+}
+
+.noOfItemsInCart {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  color: red;
+  width: 15px;
+  height: 15px;
+
+  border-radius: 80%;
+  font-size: 0.6em;
 }
 
 body > div > div > div.menu > div.admin > a,
@@ -107,7 +120,7 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 5px;
   padding-left: 15px;
-
+  grid-auto-flow: row;
   justify-content: center;
   column-gap: 10px;
   row-gap: 20px;
@@ -177,4 +190,52 @@ a:hover {
 .product-card .details:hover {
   background-color: dodgerblue;
   font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #121311;
+  color: #cdcdcd;
+  padding: 10px;
+  gap: 10px;
+  height: 20vh;
+}
+
+.footer img {
+  max-width: 70%;
+  height: auto;
+}
+
+.footer > h6 {
+  font-size: 0.9em;
+  font-family: cursive;
+  text-align: center;
+}
+
+.info {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  padding: 5px;
+}
+
+.project,
+.madeBy {
+  font-size: 0.9em;
+  font-family: cursive;
+  height: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 478px) {
+  .container-details,
+  .containerHome,
+  .adminContainer,
+  .container {
+    font-size: 50%;
+  }
 }

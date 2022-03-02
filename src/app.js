@@ -1,3 +1,7 @@
+let noItems = 0;
+let cart = JSON.parse(localStorage.getItem("cart"));
+
+// fetch all products on page load
 window.addEventListener("load", fetchProducts);
 
 async function fetchProducts() {
@@ -25,24 +29,33 @@ async function fetchProducts() {
   document.querySelector(".products-cards-grid").innerHTML = productCardsString;
 }
 
-let allProducts = document.getElementById("allProducts");
-allProducts.addEventListener("click", fetchProducts);
+//number of items in cart
+if (cart) {
+  cart.forEach((product) => {
+    noItems = noItems + product.itemNo;
+  });
+  document.querySelector(".noOfItemsInCart").innerHTML = noItems;
 
-let bikes = document.getElementById("bikes");
+  // all products fetch from dropdown button
+  let allProducts = document.getElementById("allProducts");
+  allProducts.addEventListener("click", fetchProducts);
 
-bikes.addEventListener("click", fetchProductsBikes);
+  let bikes = document.getElementById("bikes");
 
-async function fetchProductsBikes() {
-  let resultBikes = await fetch(
-    "https://61e06cc763f8fc0017618752.mockapi.io/bikes"
-  );
+  // bikes category fetch
+  bikes.addEventListener("click", fetchProductsBikes);
 
-  let productsBikes = await resultBikes.json();
+  async function fetchProductsBikes() {
+    let resultBikes = await fetch(
+      "https://61e06cc763f8fc0017618752.mockapi.io/bikes"
+    );
 
-  let productCardsStringmtb = productsBikes
-    .map(
-      (product) =>
-        `<div class="product-card">
+    let productsBikes = await resultBikes.json();
+
+    let productCardsStringmtb = productsBikes
+      .map(
+        (product) =>
+          `<div class="product-card">
                 <h5 id="name">${product.name}</h5>
                 <img src=${product.imageURL} alt="image missing" />
                 <div class="price">
@@ -52,27 +65,29 @@ async function fetchProductsBikes() {
                 <a href="detail.html?id=${product.id}"><button class="details">Details</button></a>
                 
             </div>`
-    )
-    .join("");
+      )
+      .join("");
 
-  document.querySelector(".products-cards-grid").innerHTML =
-    productCardsStringmtb;
-}
+    document.querySelector(".products-cards-grid").innerHTML =
+      productCardsStringmtb;
+  }
 
-let protection = document.getElementById("protection");
-protection.addEventListener("click", fetchProductsProtection);
+  // protection category fetch
 
-async function fetchProductsProtection() {
-  let resultProtection = await fetch(
-    "https://61e06cc763f8fc0017618752.mockapi.io/protection"
-  );
+  let protection = document.getElementById("protection");
+  protection.addEventListener("click", fetchProductsProtection);
 
-  let productsProtection = await resultProtection.json();
+  async function fetchProductsProtection() {
+    let resultProtection = await fetch(
+      "https://61e06cc763f8fc0017618752.mockapi.io/protection"
+    );
 
-  let productCardsStringmtb = productsProtection
-    .map(
-      (product) =>
-        `<div class="product-card">
+    let productsProtection = await resultProtection.json();
+
+    let productCardsStringmtb = productsProtection
+      .map(
+        (product) =>
+          `<div class="product-card">
                 <h5 id="name">${product.name}</h5>
                 <img src=${product.imageURL} alt="image missing" />
                 <div class="price">
@@ -82,27 +97,29 @@ async function fetchProductsProtection() {
                 <a href="detail.html?id=${product.id}"><button class="details">Details</button></a>
                 
             </div>`
-    )
-    .join("");
+      )
+      .join("");
 
-  document.querySelector(".products-cards-grid").innerHTML =
-    productCardsStringmtb;
-}
+    document.querySelector(".products-cards-grid").innerHTML =
+      productCardsStringmtb;
+  }
 
-let wear = document.getElementById("wear");
-wear.addEventListener("click", fetchProductsWear);
+  // wear category fetch
 
-async function fetchProductsWear() {
-  let resultWear = await fetch(
-    "https://61e06cc763f8fc0017618752.mockapi.io/wear"
-  );
+  let wear = document.getElementById("wear");
+  wear.addEventListener("click", fetchProductsWear);
 
-  let productsWear = await resultWear.json();
+  async function fetchProductsWear() {
+    let resultWear = await fetch(
+      "https://61e06cc763f8fc0017618752.mockapi.io/wear"
+    );
 
-  let productCardsStringmtb = productsWear
-    .map(
-      (product) =>
-        `<div class="product-card">
+    let productsWear = await resultWear.json();
+
+    let productCardsStringmtb = productsWear
+      .map(
+        (product) =>
+          `<div class="product-card">
                 <h5 id="name">${product.name}</h5>
                 <img src=${product.imageURL} alt="image missing" />
                 <div class="price">
@@ -112,9 +129,10 @@ async function fetchProductsWear() {
                 <a href="detail.html?id=${product.id}"><button class="details">Details</button></a>
                 
             </div>`
-    )
-    .join("");
+      )
+      .join("");
 
-  document.querySelector(".products-cards-grid").innerHTML =
-    productCardsStringmtb;
+    document.querySelector(".products-cards-grid").innerHTML =
+      productCardsStringmtb;
+  }
 }

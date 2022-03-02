@@ -26,6 +26,15 @@ window.addEventListener("load", async () => {
       </div>        
   `;
   document.querySelector(".product-details").innerHTML = productCard;
+  // no of items in cart on page load
+  let noItems = 0;
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  if (cart) {
+    cart.forEach((product) => {
+      noItems = noItems + product.itemNo;
+    });
+    document.querySelector(".noOfItemsInCart").innerHTML = noItems;
+  }
 });
 
 document.querySelector(".product-details").addEventListener("click", addToCart);
