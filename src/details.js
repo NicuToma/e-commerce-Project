@@ -26,6 +26,7 @@ window.addEventListener("load", async () => {
       </div>        
   `;
   document.querySelector(".product-details").innerHTML = productCard;
+
   // no of items in cart on page load
   let noItems = 0;
   let cart = JSON.parse(localStorage.getItem("cart"));
@@ -37,6 +38,7 @@ window.addEventListener("load", async () => {
   }
 });
 
+//add to cart product
 document.querySelector(".product-details").addEventListener("click", addToCart);
 async function addToCart(event) {
   const addToCartBtn = event.target;

@@ -40,9 +40,9 @@ if (cart) {
   let allProducts = document.getElementById("allProducts");
   allProducts.addEventListener("click", fetchProducts);
 
+  // bikes category fetch
   let bikes = document.getElementById("bikes");
 
-  // bikes category fetch
   bikes.addEventListener("click", fetchProductsBikes);
 
   async function fetchProductsBikes() {
@@ -73,7 +73,6 @@ if (cart) {
   }
 
   // protection category fetch
-
   let protection = document.getElementById("protection");
   protection.addEventListener("click", fetchProductsProtection);
 
@@ -105,7 +104,6 @@ if (cart) {
   }
 
   // wear category fetch
-
   let wear = document.getElementById("wear");
   wear.addEventListener("click", fetchProductsWear);
 

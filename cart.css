@@ -72,6 +72,7 @@
 .decreaseNoOfProducts:hover,
 .increaseNoOfProducts:hover {
   font-size: 1.8em;
+  color: dodgerblue;
 }
 
 .deleteItem:hover {
@@ -97,14 +98,16 @@
   color: #666666;
 }
 
-.payment {
+.payment,
+.transport {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 10px;
 }
 
-.payment img {
+.payment img,
+.transport img {
   width: 30px;
   height: auto;
 }

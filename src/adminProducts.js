@@ -87,6 +87,9 @@ async function addNewProduct(event) {
       imageURL: newProductImg,
     }),
   });
+  clearFields();
+  inputDiv.style.display = "none";
+
   fetchProducts();
   let product = await response.json();
 
@@ -110,6 +113,7 @@ async function edit(event) {
   const productId = event.target.getAttribute("item-id");
   if (event.target.classList.contains("fa-edit")) {
     editProductById(productId);
+    inputDiv.style.display = "block";
   }
 }
 
@@ -139,7 +143,8 @@ async function updateProduct(event) {
   });
 
   let data = await response.json();
-
+  inputDiv.style.display = "none";
+  clearFields();
   fetchProducts();
 }
 
@@ -174,4 +179,14 @@ function showInputs() {
   } else {
     inputDiv.style.display = "block";
   }
+}
+
+//clear all inputs fields
+
+function clearFields() {
+  document.getElementById("imgurl").value = "";
+  document.getElementById("name").value = "";
+  document.getElementById("price").value = "";
+  document.getElementById("description").value = "";
+  document.getElementById("category").value = "";
 }

@@ -1,10 +1,13 @@
 # e-commerce-Project
-Final Project
 
+## Final Project
 
-NPM instal
+### NPM instal
 
-bootstrap5
-popper.js
-fontawesome
-fontsource
+#### 1. bootstrap 5
+
+#### 2. popper.js
+
+#### 3. fontawesome
+
+#### 4. fontsource

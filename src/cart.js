@@ -3,15 +3,14 @@ let noItems = 0;
 let cart = JSON.parse(localStorage.getItem("cart"));
 
 window.addEventListener("load", () => {
-  // cartItemsNo();
   // if empty cart return shopping
   if (cart.length == 0) {
     document.querySelector(".cart-body").innerHTML = ` <a href="index.html" 
     ><img src="./logo/mountain-bike.png" alt="logo"
     />Your cart is empty: Back to store!</a>`;
   }
-  //calculate toatal price
 
+  //calculate toatal price
   if (cart) {
     cart.forEach((product) => {
       total = total + Number(product.price) * product.itemNo;
@@ -49,7 +48,7 @@ window.addEventListener("load", () => {
 const cartItemsContainer = document.querySelector(".cart-body");
 cartItemsContainer.addEventListener("click", CartActions);
 
-// Cart actions
+// cart actions
 function CartActions(event) {
   const targetButton = event.target;
 
@@ -60,8 +59,7 @@ function CartActions(event) {
   );
   let quantityParagraph = targetButton.parentNode.parentNode;
 
-  // increase quantity
-
+  // increase or decrease quantity
   if (targetButton.classList.contains("increaseNoOfProducts")) {
     itemInCart.itemNo++;
   } else if (targetButton.classList.contains("decreaseNoOfProducts")) {
@@ -75,6 +73,7 @@ function CartActions(event) {
     targetButton.parentNode.parentNode.remove();
   }
 
+  //if cart becomes empty return to home page
   localStorage.setItem("cart", JSON.stringify(cart));
   if (cart.length == 0) {
     document.querySelector(".cart-body").innerHTML = ` <a href="index.html" 
@@ -82,7 +81,7 @@ function CartActions(event) {
     />Your cart is empty: Back to store!</a>`;
   }
 
-  //Total price update & update number of items in cart
+  //total price update & update number of items in cart
   if (itemInCart) {
     quantityParagraph.querySelector(".count-products").innerHTML =
       itemInCart.itemNo;
