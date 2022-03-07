@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
     />Your cart is empty: Back to store!</a>`;
   }
 
-  //calculate toatal price
+  //calculate total price
   if (cart) {
     cart.forEach((product) => {
       total = total + Number(product.price) * product.itemNo;
@@ -79,6 +79,7 @@ function CartActions(event) {
     document.querySelector(".cart-body").innerHTML = ` <a href="index.html" 
     ><img src="./logo/mountain-bike.png" alt="logo"
     />Your cart is empty: Back to store!</a>`;
+    document.querySelector(".noOfItemsInCart").innerHTML = 0;
   }
 
   //total price update & update number of items in cart

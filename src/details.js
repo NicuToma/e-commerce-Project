@@ -10,7 +10,8 @@ window.addEventListener("load", async () => {
       <div class="card">
           <div class="fotoCard">
               <h6>${product.name}</h6>
-              <img src=${product.imageURL} alt="image missing" class="resizeImg" onclick="fullSize()"/>                          
+              <img src=${product.imageURL} alt="image missing" class="resizeImg" onclick="fullSize()"/> 
+              <p class="itemsInStock">Still  <span class="stock">${product.stock}</span> in stock</p>                          
               <div class="price">
                   <p id="productPrice">Price: €  </p>
                   <p id="productPriceValue">${product.price}</p>
@@ -58,6 +59,7 @@ async function addToCart(event) {
 
       if (addedItem != undefined) {
         addedItem.itemNo++;
+        location.reload();
         window.alert("Your product have been added to cart!");
       } else {
         const itemToAdd = { ...product, itemNo: 1 };

@@ -44,6 +44,15 @@
   cursor: pointer;
 }
 
+.itemsInStock {
+  color: rgb(21, 147, 163);
+}
+
+.stock {
+  font-weight: bold;
+  color: black;
+}
+
 .price {
   display: flex;
   flex-direction: row;

@@ -48,6 +48,16 @@ async function fetchProducts() {
     .join("");
   document.querySelector(".body").innerHTML = productTable;
 
+  // no of items in cart on page load
+  let noItems = 0;
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  if (cart) {
+    cart.forEach((product) => {
+      noItems = noItems + product.itemNo;
+    });
+    document.querySelector(".noOfItemsInCart").innerHTML = noItems;
+  }
+
   //delete product from list
   let btns = document.querySelectorAll(".fa-trash-alt");
 
