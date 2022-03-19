@@ -5,9 +5,11 @@ let cart = JSON.parse(localStorage.getItem("cart"));
 window.addEventListener("load", () => {
   // if empty cart return shopping
   if (cart.length == 0) {
-    document.querySelector(".cart-body").innerHTML = ` <a href="index.html" 
-    ><img src="./logo/mountain-bike.png" alt="logo"
-    />Your cart is empty: Back to store!</a>`;
+    document.querySelector(
+      ".cart-body"
+    ).innerHTML = ` <div class:"backHome"><img src="./logo/mountain-bike.png" alt="logo"
+    /><a  href="index.html" 
+    >Your cart is empty:<strong style="color:red"> Back to store!</strong></a></div>`;
   }
 
   //calculate total price
@@ -32,7 +34,7 @@ window.addEventListener("load", () => {
               </div>          
               <p item-id=${product.id} class="priceValue">Price: ${product.price}</p>  
                    
-              <button item-id=${product.id} class="deleteItem"><i item-id=${product.id} class="fas fa-trash-alt">X</i></button>                     
+              <button item-id=${product.id} class="deleteItem"><i item-id=${product.id} class="fas fa-trash-alt">remove</i></button>                     
           </div> `
       )
       .join("");
@@ -76,9 +78,11 @@ function CartActions(event) {
   //if cart becomes empty return to home page
   localStorage.setItem("cart", JSON.stringify(cart));
   if (cart.length == 0) {
-    document.querySelector(".cart-body").innerHTML = ` <a href="index.html" 
-    ><img src="./logo/mountain-bike.png" alt="logo"
-    />Your cart is empty: Back to store!</a>`;
+    document.querySelector(
+      ".cart-body"
+    ).innerHTML = ` <div class:"backHome"><img src="./logo/mountain-bike.png" alt="logo"
+    /><a  href="index.html" 
+    >Your cart is empty: <strong style="color:red"> Back to store!</strong></a></div>`;
     document.querySelector(".noOfItemsInCart").innerHTML = 0;
   }
 
