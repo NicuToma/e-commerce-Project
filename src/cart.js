@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
               </div>          
               <p item-id=${product.id} class="priceValue">Price: ${product.price}</p>  
                    
-              <button item-id=${product.id} class="deleteItem"><i item-id=${product.id} class="fas fa-trash-alt"></i></button>                     
+              <button item-id=${product.id} class="deleteItem"><i item-id=${product.id} class="fas fa-trash-alt">X</i></button>                     
           </div> `
       )
       .join("");
