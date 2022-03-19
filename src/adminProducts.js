@@ -152,7 +152,7 @@ async function updateProduct(event) {
     }),
   });
 
-  let data = await response.json();
+  // let data = await response.json();
   inputDiv.style.display = "none";
   clearFields();
   fetchProducts();

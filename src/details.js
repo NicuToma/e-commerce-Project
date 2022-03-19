@@ -19,7 +19,7 @@ window.addEventListener("load", async () => {
                <button item-id=${product.id} class="add-to-cart  ">Add to cart</button>                           
           </div>   
                	           
-          <div class="productDetails">
+          <div class="productDescription">
                 <h2>Product Details</h2>
 	  			      <p>${product.description}</p>
 		      </div>

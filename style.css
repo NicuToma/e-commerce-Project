@@ -1,11 +1,28 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Roboto";
 }
+@media screen and (max-width: 600px) {
+  .container-details,
+  .containerHome,
+  .adminContainer,
+  .container {
+    font-size: 50%;
+  }
+  .add-to-cart {
+    position: relative;
+    top: 18%;
+    font-size: 0.2em;
+    margin-bottom: 30%;
+    border-radius: 1%;
+    height: auto;
+  }
+}
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Roboto";
 }
 
 .containerHome,
@@ -59,24 +76,31 @@ body {
   font-weight: bold;
   flex-wrap: nowrap;
 }
-
 .menu,
 .cart,
 .admin {
   display: flex;
   flex-direction: row;
-  padding: 10px;
-  gap: 10px;
+  padding: 0.3em;
+  gap: 0.1em;
+}
+
+.menu a,
+.cart a,
+.admin a {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
 }
 
 .noOfItemsInCart {
   position: relative;
-  justify-content: center;
+  padding: 1em 0.8em 0em 0.1em;
   text-align: center;
   color: red;
-  width: 15px;
-  height: 15px;
 
+  width: 0.1em;
+  height: 0.1em;
   border-radius: 80%;
   font-size: 0.6em;
 }
@@ -191,51 +215,65 @@ a:hover {
   background-color: dodgerblue;
   font-weight: bold;
 }
+/* footer style */
 
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #121311;
+  text-align: justify;
+  font-family: cursive;
   color: #cdcdcd;
-  padding: 10px;
-  gap: 10px;
-  height: 20vh;
-}
-
-.footer img {
-  max-width: 70%;
+  gap: 10%;
+  padding: 1% 3% 1% 3%;
   height: auto;
 }
 
-.footer > h6 {
-  font-size: 0.9em;
-  font-family: cursive;
-  text-align: center;
+.contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.payment {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 30%;
+  gap: 0.2%;
+}
+
+.transportLogo,
+.paymentLogo {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+}
+
+.transportLogo img {
+  max-width: 20%;
+  height: auto;
+}
+
+.paymentLogo img {
+  max-width: 10%;
+  height: auto;
 }
 
 .info {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20%;
-  padding: 5px;
+  max-width: 30%;
+  padding: 0.2em;
 }
 
 .project,
 .madeBy {
   font-size: 0.9em;
   font-family: cursive;
-  height: 10px;
+  height: 0.5%;
   text-align: center;
-}
-
-@media screen and (max-width: 478px) {
-  .container-details,
-  .containerHome,
-  .adminContainer,
-  .container {
-    font-size: 50%;
-  }
 }
