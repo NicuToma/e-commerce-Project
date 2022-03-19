@@ -11,6 +11,11 @@
   .container {
     font-size: 50%;
   }
+
+  .footer {
+    position: relative;
+    bottom: 0px;
+  }
   .add-to-cart {
     position: relative;
     margin-top: 25%;
