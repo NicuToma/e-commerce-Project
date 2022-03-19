@@ -28,6 +28,9 @@
     max-width: 20%;
     font-size: 0.2em;
   }
+  .deleteItem i {
+    font-size: 0.7em;
+  }
 }
 
 body {
@@ -224,6 +227,7 @@ a:hover {
   background-color: dodgerblue;
   font-weight: bold;
 }
+
 /* footer style */
 
 .footer {
@@ -243,6 +247,10 @@ a:hover {
 .contact {
   display: flex;
   flex-direction: column;
+  max-width: 30%;
+}
+
+.contact p {
   max-width: 30%;
 }
 
