@@ -41,8 +41,8 @@ async function fetchProducts() {
             <td class="prodName">${product.name}</td>
             <td> ${product.description}"</td>
             <td class="prodPrice">${product.price}</td>
-            <td class="deleteItem"><a href="#" class="deleteItem"><i item-id=${product.id} class="far fa-trash-alt"></i></a></td>
-            <td class="editItem"><a href="#" class="editItem"><i item-id=${product.id} class="far fa-edit"></i></a></td>
+            <td class="deleteItem"><a href="#" class="deleteItem"><i item-id=${product.id} class="far fa-trash-alt">remove</i></a></td>
+            <td class="editItem"><a href="#" class="editItem"><i item-id=${product.id} class="far fa-edit">edit</i></a></td>
         </tr> `
     )
     .join("");
