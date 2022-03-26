@@ -5,6 +5,18 @@
   font-family: "Roboto";
 }
 
+.nav_menu_admin {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: #121311;
+  color: #cdcdcd;
+}
+
 .edit-box {
   display: flex;
   flex-direction: column;

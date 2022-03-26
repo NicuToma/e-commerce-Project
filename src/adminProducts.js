@@ -1,32 +1,12 @@
 const productTable = document.querySelector(".body");
 const addNewProductBtn = document.querySelector(".add-new-product");
 const updateProductBtn = document.querySelector(".update-product");
-//activate when mock api works
+
 const productsURL = "https://61e06cc763f8fc0017618752.mockapi.io/products";
 
-//using json localy when mock api doesn't work
-// const productsURL = "products.json";
-// const request = new XMLHttpRequest();
-// request.open("GET", productsURL);
-// request.responseType = "json";
-// request.send();
-
-// window.addEventListener("load", processData);
-// function processData() {
-//   const data = request.response;
-//   const products = data.products;
-//   fetchProducts(products);
-// }
-// end using local json
-
-//activate when mock api works
 window.addEventListener("load", fetchProducts);
 
 async function fetchProducts() {
-  //local json fetch
-  // let result = await fetch("products.json");
-
-  //activate when mock api works
   let result = await fetch(
     "https://61e06cc763f8fc0017618752.mockapi.io/products"
   );

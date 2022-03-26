@@ -14,15 +14,16 @@ async function fetchProducts() {
     .map(
       (product) =>
         `<div class="product-card">
-            <h5 id="name">${product.name}</h5>
+            <h6 id="name">${product.name}</h6>
             <img src=${product.imageURL} alt="image missing" />
             <div class="price">
                 <span class="priceOf">Price: € </span>
                 <span class="priceValue">${product.price}</span>
             </div>
-            <a href="detail.html?id=${product.id}"><button class="details">Details</button></a>
+            <button class="details"><a href="detail.html?id=${product.id}">Details</a></button>
             
-        </div>`
+        </div>
+       `
     )
     .join("");
 
@@ -56,13 +57,13 @@ if (cart) {
       .map(
         (product) =>
           `<div class="product-card">
-                <h5 id="name">${product.name}</h5>
+                <h6 id="name">${product.name}</h6>
                 <img src=${product.imageURL} alt="image missing" />
                 <div class="price">
                     <span class="priceOf">Price: € </span>
                     <span class="priceValue">${product.price}</span>
                 </div>
-                <a href="detail.html?id=${product.id}"><button class="details">Details</button></a>
+                <button class="details"><a href="detail.html?id=${product.id}">Details</a></button>
                 
             </div>`
       )
@@ -87,13 +88,13 @@ if (cart) {
       .map(
         (product) =>
           `<div class="product-card">
-                <h5 id="name">${product.name}</h5>
+                <h6 id="name">${product.name}</h6>
                 <img src=${product.imageURL} alt="image missing" />
                 <div class="price">
                     <span class="priceOf">Price: € </span>
                     <span class="priceValue">${product.price}</span>
                 </div>
-                <a href="detail.html?id=${product.id}"><button class="details">Details</button></a>
+                <button class="details"><a href="detail.html?id=${product.id}">Details</a></button>
                 
             </div>`
       )
@@ -118,13 +119,13 @@ if (cart) {
       .map(
         (product) =>
           `<div class="product-card">
-                <h5 id="name">${product.name}</h5>
+                <h6 id="name">${product.name}</h6>
                 <img src=${product.imageURL} alt="image missing" />
                 <div class="price">
                     <span class="priceOf">Price: € </span>
                     <span class="priceValue">${product.price}</span>
                 </div>
-                <a href="detail.html?id=${product.id}"><button class="details">Details</button></a>
+                <button class="details"><a href="detail.html?id=${product.id}">Details</a></button>
                 
             </div>`
       )
